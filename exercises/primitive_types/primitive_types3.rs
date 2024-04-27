@@ -10,7 +10,7 @@
 fn main() {
     let a = 999;
 
-    if a.len() >= 100 {
+    if a >= 100 {
         println!("Wow, that's a big array!");
     } else {
         println!("Meh, I eat arrays like that for breakfast.");
