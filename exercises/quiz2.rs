@@ -42,7 +42,7 @@ mod my_module {
                 Command::Trim => {output.push(string.trim().to_string());}
                 Command::Append(i) => {
                     let mut t = 0;
-                    let mut string = string.to_owned();
+                    let mut string = string.clone();
                     while t < *i{
                         string.push_str("bar");
                         t +=1;
